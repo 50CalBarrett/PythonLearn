@@ -201,3 +201,24 @@ print(p)#
 from sklearn.preprocessing import PolynomialFeatures
 pr=PolynomialFeatures(degree=2, include_bias=False)
 x_polly=pr.fit_transform(x[['predictor','predictor2']])
+
+
+#Pre-processing normalizing the data for multiple predictors at once
+from sklearn.preprocessing import StandardScaler
+SCALE =StandardScaler()
+SCALE..fit(x_data[['predictor1','predictor2']])
+x_scale=SCALE.transform(x_data[['predictor1','predictor2']])
+
+
+#Piplines
+from sklean.preprocessing import PolynomialFeatures
+from sklean.linear_model import LinearRegression
+from sklean.preprocessing import StandardScaler
+
+from sklearn.pipeline import Pipeline
+#create a list of tuples
+Input=[('Scale',StandardScaler()),('Polynomials', PolynomialFeatures(degree=2)),('Model',LinearRegression())]
+
+#Train the Pipeline
+Pipe.train(x['predictor1','predictor2','predictor3','predictor4'],y)
+Yhat=Pipe.predict(x[['predictor1','predictor2','predictor3','predictor4']])
