@@ -222,3 +222,20 @@ Input=[('Scale',StandardScaler()),('Polynomials', PolynomialFeatures(degree=2)),
 #Train the Pipeline
 Pipe.train(x['predictor1','predictor2','predictor3','predictor4'],y)
 Yhat=Pipe.predict(x[['predictor1','predictor2','predictor3','predictor4']])
+
+/*
+Two methods to measure for in-sample evaluation
+Measures for insample evaluation
+-MSE(MeanSquaredError)
+-R2(R-squared) How close the data is to the regression line
+*/
+
+#MSE Calculation
+from sklean.metrics import mean_squared_error
+mean_squared_error(df['target'],Y_predict_simple_fit)
+
+# Finding R2 value usually between 0 and 1
+X= df[['predictor']]
+Y=[['target']]
+
+lm.score(X,Y)
