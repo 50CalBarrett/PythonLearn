@@ -239,3 +239,7 @@ X= df[['predictor']]
 Y=[['target']]
 
 lm.score(X,Y)
+
+
+#generating a sequence 
+new_input=np.arange(<start>,<stop>,<step>),reshape(-1,1)
