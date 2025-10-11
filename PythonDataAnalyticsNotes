@@ -112,6 +112,10 @@ plt.title("titleOfScatterPlot")
 plt.xlable("pretictor")
 plt.ylabel("target")
 
+# Scatter plot with regression line seaborn reg plot to implement
+sns.regplot(x='column1', y='column2', data = dataframe)
+plt.ylim(0,)
+
 
 #Group by in Py using Pandas
 dataframe.Groupby()
@@ -139,3 +143,19 @@ groupedANOVAdataframe = dataframe_ANOVA.groupb([['column1']])
 anova_results = stats.f_oneway(grouped_anova.get_group('column1')['predictor'], grouped_anova.get_group('column2')['predictor'])
 #F= score p=F_onewayResult(statistic=A), pvalue=B 
 # A is large and B is over 1 so the results are significant. resulting in a categorical value vs a metric meaning there is a strong correlation.
+
+/*
+Pearson Correlation
+-correlation coefficient 
+	-close to +1: large positive relationship
+	-close to -1: large negative relationship
+	-close to 0: No relationship
+-P-value
+	- <0.001 Strong certainty
+	- <0.05  Moderate certainty
+	- <0.1   Weak certainty
+	- >0.1   No certainty
+*/
+
+
+
