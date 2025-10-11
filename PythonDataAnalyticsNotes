@@ -190,3 +190,8 @@ sns.residplot)df['predictor'], df['target'])
 import seabord as sns
 ax1 = sns.distplot(df['target'], hist=False, color='', label='<label>')
 sns.distplot(Yhat, hist=False, clor='b', lable='<Yhat>', ax=ax1)
+
+Polynomial Regression
+f.np.polyfit(x,y,3)
+p=np.polyd(f)
+print(p)#
