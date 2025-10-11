@@ -195,3 +195,9 @@ Polynomial Regression
 f.np.polyfit(x,y,3)
 p=np.polyd(f)
 print(p)#
+
+#Polynomial regression with more than one dimension
+#in scikit-learn
+from sklearn.preprocessing import PolynomialFeatures
+pr=PolynomialFeatures(degree=2, include_bias=False)
+x_polly=pr.fit_transform(x[['predictor','predictor2']])
