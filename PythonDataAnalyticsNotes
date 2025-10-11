@@ -1,0 +1,89 @@
+#import urllib.request
+#url = 'HTTPS//:...'
+#filename = 'Exemple.txt"
+#urllib.request.retrieve(url, filename)
+
+#install specific version of libraries used in  lab
+#! mamba install pandas==1.3.3  -y
+#! mamba install numpy=1.21.2 -y
+
+# import pandas library
+import pandas as pd
+import numpy as np
+
+#r+ : Reading and writing. Cannot truncate the file.
+#w+ : Writing and reading. Truncates the file.
+#a+ : Appending and Reading. Creates a new file, if none exists. You dont have to dwell on the specifics of each mode for this lab.
+
+
+
+
+# create functions that will open files
+# create functions that will read files
+# create functions that will close files
+# THE FOLLOWING DOES ALL 3
+with open("example",r)asFile1:
+	file_stuff = File1.read()
+	print(file_stuff)
+	print(File1.closed)
+	print(file_stuff)
+
+
+# Creating a method that will read lines
+with open("example",r)asFile1:
+	file_stuff = File1.readlines()
+	print(file_stuff)
+
+
+# creating a fuctional loop that will print out each line
+with open("example",r)asFile1:
+	for line in File1:
+		print(line)
+
+
+# create functions that will save files
+def save_file():
+    pass
+
+# import data function
+import pandas as pd
+<PathSource> = "Path"
+
+dataFrame = pd.read_csv(<PathSource>)
+
+# if no header on data file 
+
+dataFram = pd.read_csv(<PathSource>, header = None)
+
+# saving new dataFrame 
+
+path = '<PathDestination>'
+df.to_csv(<path>)
+
+# web scraper function to call other methods. 
+def web_scraper(file):
+    for address in file:
+        if address != isinstance(re.file"\\, \:, https://+")
+    open_file(file)
+    read_file(file)
+    save_file(file)
+    close_file(file)
+
+
+#Read all lines and save as list 
+with open(example1, 'r') as file1:
+	fileaslist = file1.readlines()
+
+
+#writing to file
+File1 = open(file name, 'w')as file1:
+	file1.write("This is a line A")
+
+#appending an existing file vs writing a new one
+with open('filePATH', 'a') as File1:
+	File1.write('<text>')
+# To Open read and then write files
+with open('filePATH', 'r') as readfile:
+	with open('filePATH', 'w') as writefile:
+		for line in readfiles:
+			writefile.write(line)
