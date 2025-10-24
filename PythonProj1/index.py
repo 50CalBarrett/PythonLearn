@@ -7,7 +7,7 @@ class jobPost:
 
     #INSTANCE 
     def get_info(self):
-        with open("/Users/alexander/Documents",r):
+        with open("/Users/",r):
 	        file_stuff = File1.read()
 	        print(file_stuff)
 	        print(File1.closed)
